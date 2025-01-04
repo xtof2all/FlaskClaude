@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<div class="text-center">
+    <h1>Welcome to FlaskClaude</h1>
+    {% if current_user.is_authenticated %}
+        <p>Hello, {{ current_user.firstname }}!</p>
+        <a href="{{ url_for('main.dashboard') }}" class="btn btn-primary">Go to Dashboard</a>
+    {% else %}
+        <p>Please login to access your dashboard.</p>
+        <a href="{{ url_for('auth.login') }}" class="btn btn-primary">Login</a>
+    {% endif %}
+</div>
+{% endblock %}

@@ -1,0 +1,17 @@
+Generic single-database configuration with alembic.
+
+This directory contains database migrations for the FlaskClaude application.
+
+If you're setting up the project for the first time:
+
+1. The initial migration is already included and creates the user table
+2. Simply run: `flask db upgrade`
+
+To create new migrations after modifying models:
+1. Make your changes to the models
+2. Run: `flask db migrate -m "Description of changes"`
+3. Review the generated migration in migrations/versions/
+4. Apply it with: `flask db upgrade`
+
+To roll back a migration:
+`flask db downgrade`

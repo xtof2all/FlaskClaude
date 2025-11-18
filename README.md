@@ -90,5 +90,3 @@ FlaskClaude/
    - Views: Blueprint view files
    - Templates: Jinja2 templates
 4. **OAuth Integration**: Extensible OAuth provider system
-
-[Rest of the README content remains the same...]

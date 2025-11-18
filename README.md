@@ -2,7 +2,6 @@
 
 A Flask application with OAuth implementation demonstrating secure web application development with Flask and Google OAuth.
 
-[Previous sections remain the same until Project Structure...]
 
 ## Project Structure
 
